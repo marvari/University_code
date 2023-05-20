@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} алгоритм Евклида{% endblock %}
+
+{% block page_name %}<h1>Алгоитм Евклида</h1>{% endblock %}
+
+
+{% block content %} 
+<p>
+<font size="5" color="Navy" face="bookman old style">Нахождение НОД с помощью алгоритма Евклида:</font>
+</p>
+ <form action="/euclidean_algorithm" method="POST">
+ <input type="text" value="{{num1}}" name="num1" style="background: LightYellow; color: Navy;"  placeholder="Введите первое число"/>
+ <input type="text" value="{{num2}}" name="num2" style="background: LightYellow; color: Navy;"  placeholder="Введите второе число"/>
+ <input type="submit" value="Найти НОД" style="background: LightYellow; color: Navy;"/>
+ </form>
+      
+
+{% block answer %} 
+
+{% endblock %}
+{% endblock %}

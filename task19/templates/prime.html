@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %} проверка простоты{% endblock %}
+
+{% block page_name %}<h1>Проверка на простоту</h1>{% endblock %}
+
+
+{% block content %} 
+<p>
+<font size="5" color="Navy" face="bookman old style">Проверка числа на простоту:</font>
+</p>
+ <form action="/prime_test" method="POST">
+      <input type="text" value="{{num}}" name="num" style="background: LightYellow; color: Navy;"  placeholder="Введите число"/>
+      <input type="submit" value="Проверить" style="background: LightYellow; color: Navy;"/>
+ </form>
+{% block answer %}
+
+{% endblock %}
+
+{% endblock %}
